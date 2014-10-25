@@ -4,5 +4,6 @@
     <string name="app_name">education</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_load">LoadActivity</string>
 
 </resources>
