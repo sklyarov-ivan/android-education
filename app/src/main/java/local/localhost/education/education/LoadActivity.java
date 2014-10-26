@@ -24,7 +24,7 @@ public class LoadActivity extends Activity {
                 } catch (InterruptedException e) {
                     e.fillInStackTrace();
                 } finally {
-                    Intent counterActivity = new Intent("local.localhost.education.education.COUNTERACTIVITY");
+                    Intent counterActivity = new Intent("local.localhost.education.education.MENUACTIVITY");
                     startActivity(counterActivity);
                 }
             }
