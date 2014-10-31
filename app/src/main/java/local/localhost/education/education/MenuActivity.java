@@ -13,7 +13,7 @@ import android.widget.ListView;
 
 public class MenuActivity extends ListActivity {
 
-    String classes[] = {"CounterActivity","test 1","test 2","test 3"};
+    String classes[] = {"Counter","TextManipulation","test 2","test 3"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MenuActivity extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
         String className = classes[position];
+        className = className+"Activity";
         try {
             Class selectedClass = Class.forName("local.localhost.education.education."+className);
             Intent newActivity = new Intent(MenuActivity.this, selectedClass);
